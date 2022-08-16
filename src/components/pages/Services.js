@@ -10,7 +10,7 @@ const Services = () => {
   const [washers, setWashers] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:9991/admin/allpacks").then(result => {
+    fetch("http://localhost:8081/admin/allpacks").then(result => {
       result.json().then(
         resp => {
           setWashers(resp)

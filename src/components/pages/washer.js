@@ -6,7 +6,7 @@ const Washer = () => {
 
     const [washers, setWashers] = useState([])    
     useEffect(() => {
-        fetch("http://localhost:9991/order/allorders").then(result => {
+        fetch("http://localhost:8083/order/allorders").then(result => {
             result.json().then(
                 resp => {
                     setWashers(resp)

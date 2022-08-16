@@ -2,10 +2,10 @@
 .formTop {
      padding: 0.5px;
     margin-top: 60px;
-    background-color: rgb(170, 204, 214);
+    background-color: rgb(179, 214, 170);
   }
   .c1{
-      color: black;
+      color: blue;
   }
   
   .formTitle {
@@ -18,7 +18,7 @@
     width: 800px;
     margin: 40px auto;
     padding: 50px 30px;
-    background-color: #b3d1da;
+    background-color:pink;
     border-radius: 0.4rem;
     box-shadow: 10px 10px 10px rgb(194, 194, 194, 0.5);
   }
@@ -39,7 +39,7 @@
     height: 50px;
     padding: 0px 0px 5px 20px;
     border-radius: 0.5rem;
-    border: none;
+    border:black;
     box-shadow: 4px 4px 4px rgb(194, 194, 194, 0.5);
   }
   

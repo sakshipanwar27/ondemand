@@ -48,10 +48,35 @@ video {
   margin-top: 32px;
 }
 
+.moto{
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif; 
+  font-size: 2.0rem;
+}
+
 .hero-btns .btn {
   margin: 6px;
 }
+.btns, .btns:focus, .btns:active {
+  text-decoration: none;
+  color: inherit;
+} 
 
+.btns{
+  border: 4px solid #fff; 
+  color: black;
+  transition: all;
+  background-color: #fff;
+  transition-duration: 0.5s;
+  padding: 5px ;
+}
+
+.btns:hover{
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid black;
+  transform: translateY(2px);
+}
 
 @media screen and (max-width: 960px) {
   .hero-container > h1 {

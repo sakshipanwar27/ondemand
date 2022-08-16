@@ -1,16 +1,22 @@
 import React from 'react';
-import '../../App.css';
-import Footer from '../Footer';
-//import Admin from './Admin';
+//import Footer from '../Footer';
+import Admin from './Admin';
 import AdminNavbar from './AdminNab';
 import UserNavbar from './UserNavbar';
 
 function UserHome() {
   return (
+
     <>
-       <UserNavbar/>
     
-       <Footer/>
+       <UserNavbar/>
+      <h1>
+        Welcome
+        </h1>
+        <img src='images/bakground.jpg.png'></img>
+
+
+
     </>
   );
 }

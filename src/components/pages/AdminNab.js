@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import './Navbar.css';
+//import './Navbar.css';
 
 
 function AdminNavbar() {
@@ -28,11 +28,12 @@ function AdminNavbar() {
 
   return (
     <>
+    
 
       <nav className="navbar navbar-expand navbar-dark bg-dark">
 
         <Link to={"/"} className="navbar-brand">
-          AutoGlow Car Wash
+          
         </Link>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
@@ -59,7 +60,7 @@ function AdminNavbar() {
           </li>
           <li className="nav-item">
             <Link to={"/WasherProfile"} className='nav-link'>
-             Wahser Profiles
+             Washer Profiles
             </Link>
           </li>
 

@@ -1,4 +1,4 @@
-/* .App {
+.App {
     font-family: sans-serif;
     text-align: center;
   }
@@ -13,8 +13,9 @@
   
   .card {
     padding: 30px;
-    border: solid 1px rgba(0, 0, 0, 0.08);
+    border: solid 1px rgba(0, 0, 0, 0.622);
     cursor: pointer;
+    color: cadetblue;
   }
   .card:hover {
     box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.08);
@@ -59,4 +60,4 @@
       max-width: 1040px;
     }
   }
-   */
+  

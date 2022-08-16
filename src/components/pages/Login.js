@@ -3,8 +3,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
 import Signup from "./SignUp";
-import FacebookLogin from 'react-facebook-login';
-import GoogleLogin from 'react-google-login';
 
 import { createButton } from "react-social-login-buttons";
 
@@ -93,10 +91,13 @@ const Login = () => {
 
   return (
     <div>
-      <h1 className="title1a">LOGIN</h1>
+      <h1 className="title1a">USER LOGIN</h1>
+      
       <div className="loginForm">
         <div className="name">
           <label>Username</label>
+
+          
           <input
             type="text"
             placeholder="  Enter Username"

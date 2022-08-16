@@ -15,11 +15,11 @@ const About = () => {
       
       <div className='aboutus'>
         <h3>WHO WE ARE</h3>
-        <p> AutoGlow Car Wash is a brand which is literally going to change the way people think about car cleaning. It is a unique mechanized car cleaning concept where cars are getting pampered by the latest equipments including high pressure cleaning machines, spray injection and extraction machines, high powered vacuum cleaners, steam cleaners and so on.
+        <p> A brand which is literally going to change the way people think about car cleaning. It is a unique mechanized car cleaning concept where cars are getting pampered by the latest equipments including high pressure cleaning machines, spray injection and extraction machines, high powered vacuum cleaners, steam cleaners and so on.
         </p>
         <p>
           In this fast moving life today we tend to spend more time in travelling as a result spend hours in the car, navigating the traffic jams. Air Pollution, Dust, Rain, Sunlight and Adverse road conditions all keeps adding on woos of common car users. And as a result, there is a severe need of Professional Car Cleaning Organization to take care of all Car Cleaning jobs and give us the finest and ultimate car cleaning experience and satisfaction.</p>
-        <p> AutoGlow Car Wash is here to stay and work dedicatedly towards spreading the awareness among car users about their car hygiene habits, cleanliness, durability of exterior look and other common cleaning tips.</p>
+        <p> We are here to stay and work dedicatedly towards spreading the awareness among car users about their car hygiene habits, cleanliness, durability of exterior look and other common cleaning tips.</p>
 
       </div>
       <Footer />

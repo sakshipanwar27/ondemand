@@ -7,7 +7,7 @@ function Footer() {
         <Navbar fixed="bottom" bg="dark" variant="dark">
           <Container >
                <Col lg={12} className="text-center text-muted">
-                     <div>AutoGlow Car Wash: An on demand car wash app @2022</div>
+                     <div>On demand car wash app</div>
                      
                      
                </Col>
