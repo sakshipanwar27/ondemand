@@ -2,28 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
+import {CgFacebook,CgGoogle} from 'react-icons/cg'
 import Signup from "./SignUp";
-
-import { createButton } from "react-social-login-buttons";
-
-const config = {
-  text: "Log in with Facebook",
-  icon: "facebook",
-  iconFormat: (name) => `fa fa-${name}`,
-  style: { background: "#3b5998" },
-  activeStyle: { background: "#293e69" },
-};
-/** My Facebook login button. */
-const MyFacebookLoginButton = createButton(config);
-
-const config1 = {
-  activeStyle: { background: "#EFF0EE" },
-  icon: "google",
-  style: { background: "white", color: "black" },
-  text: "Log in with Google",
-};
-
-const GoogleLoginButton = createButton(config1);
+import Footer from '../Footer';
 
 const Login = () => {
   let navigate = useNavigate();
@@ -90,53 +71,56 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="input">
       <h1 className="title1a">USER LOGIN</h1>
-      
+      <div className="just-for-flex">
       <div className="loginForm">
         <div className="name">
-          <label>Username</label>
-
-          
-          <input
+          <div className="input-form-section">
+          <div><label>Username</label></div>
+          <div><input
             type="text"
-            placeholder="  Enter Username"
+            placeholder="Enter Username"
             value={name}
             onChange={handleName}
-          />
-          <br></br>
-          {nameErr && <span>Enter valid name</span>}
-          <br />
-          <label>Password</label>
-          <input
+          /></div></div>
+          <span className="form-error">{nameErr && <span>Enter valid name</span>}</span>
+          <div className="input-form-section">
+          <div><label>Password</label></div>
+          <div><input
             type="password"
-            placeholder="password"
+            placeholder="Enter Password"
             value={pass}
             onChange={handlePass}
-          />
-          <br></br>
-          {passErr && <span>Enter valid password</span>}
+          /></div></div>
+          <span className="form-error">{passErr && <span>Enter valid password</span>}</span>
         </div>
-        <br />
-
-        <button className="Btn" onClick={handleClick}>
+        <button className="submit-btn" onClick={handleClick}>
           Submit
         </button>
+        <div className="just-for-flex">
+          {"or Login With "}
         <div>
-          <MyFacebookLoginButton />
+          <button 
+          className="submit-btn social"
+          ><CgGoogle size={20} style={{marginBottom:"4px",verticalAlign:"middle"}}/> Google</button>
         </div>
         <div>
-          <GoogleLoginButton />
-        </div>
         <button
-          className="Btn"
+          className="submit-btn social"
+        ><CgFacebook size={20} style={{marginBottom:"4px",verticalAlign:"middle"}}/> Facebook</button>
+        </div></div>
+        {" don't have an account?"}
+        <button
+          className="submit-btn"
           onClick={() => {
             navigate("/Signup");
           }}
         >
           SignUp
         </button>
-      </div>
+      </div></div>
+      <Footer />
     </div>
   );
 };

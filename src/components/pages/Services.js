@@ -26,10 +26,9 @@ const Services = () => {
 
   return (
     <>
-      <div className='title'>
-        <h1>Affordable Pricing For Everyone..</h1>
+      <div>
+        <h1 className='title1a'>SERVICES</h1>
         <div>
-          <h3 className='sub'>Book Your Wash Today.....!</h3>
           <div class="line-2"></div>
           {washers.map((emp, ind) => (<div >
             {/*

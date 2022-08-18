@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import Footer from '../Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 toast.configure()
@@ -131,11 +131,13 @@ export default class UserRegister extends Component {
   render() {
     return (
       <form>
-        <div className="userlogin-container">
-          <h2 className="user-panel">USER REGISTRATION</h2>
-          <hr></hr>
-          <div className="userregisterform">
-            <label><b>Name</b></label>
+        <div className="input">
+          <h2 className="title1a">USER REGISTRATION</h2>
+          <div className="just-for-flex">
+          <div className="loginForm">
+          <div className="name">
+          <div className="input-form-section">
+            <label>Name</label>
             <input
               type="text"
               placeholder="Enter name"
@@ -144,8 +146,8 @@ export default class UserRegister extends Component {
             <p style={{ color: "red" }}>{this.state.usernameError}</p>
           </div>
 
-          <div className="userregisterform">
-            <label><b>Email</b></label>
+          <div className="input-form-section">
+            <label>Email</label>
             <input
               type="email"
               placeholder="Enter Email"
@@ -154,8 +156,8 @@ export default class UserRegister extends Component {
             <p style={{ color: "red" }}>{this.state.emailError}</p>
           </div>
 
-          <div className="userregisterform">
-            <label><b>Contact</b></label>
+          <div className="input-form-section">
+            <label>Contact</label>
             <input
               type="text"
               placeholder="Enter contact"
@@ -164,8 +166,8 @@ export default class UserRegister extends Component {
             <p style={{ color: "red" }}>{this.state.contactnoError}</p>
           </div>
 
-          <div className="userregisterform">
-            <label><b>UserName</b></label>
+          <div className="input-form-section">
+            <label>Username</label>
             <input
               type="text"
               placeholder="Enter username"
@@ -174,8 +176,8 @@ export default class UserRegister extends Component {
             <p style={{ color: "red" }}>{this.state.usernameError}</p>
           </div>
 
-          <div className="userregisterform">
-            <label><b>Password</b></label>
+          <div className="input-form-section">
+            <label>Password</label>
             <input
               type="password"
               placeholder="Enter password"
@@ -184,8 +186,8 @@ export default class UserRegister extends Component {
             <p style={{ color: "red" }}>{this.state.passwordError}</p>
           </div>
 
-          <div className="userregisterform">
-            <label><b>Confirm Password</b></label>
+          <div className="input-form-section">
+            <label>Confirm Password</label>
             <input
               type="password"
               placeholder="Enter confirm password"
@@ -196,20 +198,30 @@ export default class UserRegister extends Component {
             />
             <p style={{ color: "red" }}>{this.state.confirmpasswordError}</p>
           </div>
-          <div className="userregisterform">
-            <Link
+          <div className="input-form-section">
+            <button
               type="submit"
-              className="userregisterbtn"
+              className="submit-btn"
               to="/search"
               onClick={(e) => { this.register(e); }}
             >
-              Submit
-            </Link>
+              Signup
+            </button>
             <ToastContainer />
-          </div><br></br>
-          <p className="a">Do u have an account ?<a href='/Login'>Login</a></p><br />
+          </div>
           <p className="a">Login as Member..?  <a href='/WasherLog'> Login</a></p>
+          {"already have an account?"}
+        <button
+        component={Link} to="/login"
+          className="submit-btn"
+        >
+          Login
+        </button>
+          </div>
         </div>
+        </div>
+        </div>
+        <Footer />
       </form>
     );
   }
