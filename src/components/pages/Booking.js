@@ -51,36 +51,27 @@ const Booking = () => {
 
   return (
     <>
-      <div className="formTop">
-        <div className="formTitle">
-          <p className="c1">
+      <div className="">
+        <div className="">
+          <p className="title1a">
             <h1>BOOK YOUR CAR WASH </h1>
           </p>
         </div>
       </div>
-      <div>
-        <div className="formDetails">
-          <form className="actualForm" onSubmit={submitHandler}>
-            <div style={{ marginBottom: "30px" }}>
-              <p className="formName">FILL BELOW DETAILS</p>
-            </div>
-            <div className="formDateTime">
-              <input type="date" name="date" onChange={changeHandler} />
-            </div>
-
-            {washers.map((emp, ind) => (
-              <div style={{ marginBottom: "20px" }}>
-                <option>{emp.packname}</option>
-                <input type="radio" onChange={changeHandler} /> {emp.cost}
-              </div>
-            ))}
-
-            <div style={{ marginBottom: "30px" }}>
-              <p className="formName">CONTACT DETAILS</p>
-            </div>
+      <div className="just-for-flex input">
+        <div className="loginForm">
+          <form className="" onSubmit={submitHandler}>
             <div>
+              <p style={{textAlign:"center",fontSize:"1.5rem"}}>FILL BELOW DETAILS</p>
+            </div>
+
+           
+            <div >
+              <p className="">CONTACT DETAILS</p>
+            </div>
+            <div className="input-form-section">
               <input
-                className="contactDetails"
+                className=""
                 type="text"
                 name="username"
                 onChange={changeHandler}
@@ -88,7 +79,7 @@ const Booking = () => {
               />
               <br />
               <input
-                className="contactDetails"
+                className=""
                 name="carName"
                 type="text"
                 placeholder="Enter Your Car Name"
@@ -97,7 +88,7 @@ const Booking = () => {
               <br />
 
               <input
-                className="contactDetails"
+                className=""
                 type="text"
                 name="carModel"
                 placeholder="Enter Your Car Model"
@@ -107,7 +98,7 @@ const Booking = () => {
 
               <input
                 type="text"
-                className="contactDetails"
+                className=""
                 name="contactno"
                 onChange={changeHandler}
                 placeholder="Enter Phone"
@@ -116,18 +107,31 @@ const Booking = () => {
 
               <textarea
                 cols="30"
-                className="contactDetailsTextArea"
+                className=""
                 rows="10"
                 type="text"
                 name="address"
                 onChange={changeHandler}
                 placeholder="Your Address"
               />
+
+            <div className="">
+              <input type="date" name="date" onChange={changeHandler} />
             </div>
+
+            
+
+            </div>
+            {washers.map((emp, ind) => (
+              <div style={{width:"50%"}}>
+                <option>{emp.packname}</option>
+                <input  type="radio" onChange={changeHandler} /> {emp.cost}
+              </div>
+            ))}
             <div className="Submit">
               <button
                 type="submit"
-                className="btn btn-success"
+                className="submit-btn"
                 onClick={() => {
                   navigate("/pay");
                 }}

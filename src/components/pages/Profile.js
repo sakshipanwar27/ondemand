@@ -35,7 +35,7 @@ export default class Profile extends Component {
 
     return (
       <>
-        <div>
+        
           <Table striped bordered hover variant="dark">
             <thead>
               <tr>
@@ -45,11 +45,10 @@ export default class Profile extends Component {
                 <th>Contact</th>
               </tr>
             </thead>
-          </Table>
-        </div>
+         
+        
         {items.map((item) => (
-          <div>
-            <Table striped bordered hover variant="dark">
+          
               <tbody>
                 <tr>
                   <td>{item.name}</td>
@@ -58,10 +57,9 @@ export default class Profile extends Component {
                   <td>{item.contactno}</td>
                 </tr>
               </tbody>
-            </Table>
-          </div>
+           
         ))}
-
+        </Table>
         <div>
           <Footer />
         </div>

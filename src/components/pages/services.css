@@ -47,8 +47,12 @@
 }
 
 .flip-card-front {
-  background: rgba(0, 0, 0, 0.76);
-  color: cornsilk;
+  background: #212529;
+  color: #fff;
+  vertical-align:middle; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -56,6 +60,10 @@
   background-color: #888f94;
   color: white;
   transform: rotateY(180deg);
+  background: center / cover no-repeat url("https://thumbs.dreamstime.com/b/worker-car-wash-man-polishing-polish-machine-46084156.jpg"); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mo {
   font-size: 4em;
@@ -67,4 +75,14 @@
   border-radius: 3%;
 
 }
+.V-aling{
+  vertical-align:middle; 
 
+}
+.descr{
+  background-color: #2125296b;
+}
+.s-btn{
+  width: 50%;
+  height: 20%;
+}

@@ -34,30 +34,29 @@ export default class WasherProfile extends Component {
 
     return (
       <>
-        <div>
+        
           <Table striped bordered hover variant="dark">
             <thead>
               <tr>
                 <th>Name</th>
                 <th>Location</th>
-                <th>Email</th>
-                <th>Contact</th>
+                
               </tr>
             </thead>
-          </Table>
-        </div>
+        
         {items.map((item) => (
-          <div>
-            <Table striped bordered hover variant="dark">
+        
+            
               <tbody>
                 <tr>
                   <td>{item.name}</td>
                   <td>{item.location}</td>
                 </tr>
               </tbody>
-            </Table>
-          </div>
+            
+          
         ))}
+        </Table>
 
         <div>
           <Footer />

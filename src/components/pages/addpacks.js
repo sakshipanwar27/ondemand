@@ -51,34 +51,36 @@ const Addpacks = () => {
 
   return (
     <>
-      <div className='in'>
-        <div className='container'>
-          <h2 className='title'> Add packs</h2>
-          <form className='form' onSubmit={handleSubmit}>
-            <div className='input'>
+      <div className='input'>
+        <div className=''>
+          <h2 className='title1a'> Add packs</h2>
+          <div className='just-for-flex'>
+          <form className='loginForm' onSubmit={handleSubmit}>
+            <div className='input-form-section'>
               <label>id:  </label>
               <input type='text' value={id} onChange={inputidHandler} />
             </div>
-            <div className='input'>
+            <div className='input-form-section'>
               <label>packname:  </label>
               <input type='text' value={packname} onChange={inputnameHandler} />
             </div>
-            <div className='input'>
-              <label>cost:  </label>
-              <input type='text' value={cost} onChange={inputcostdHandler} />
-            </div>
-            <div classname='input'>
+            <div className='input-form-section'>
               <label>Descripton: </label>
               <input type='text' value={description} onChange={inputdescriptionHandler} />
             </div>
+            <div className='input-form-section'>
+              <label>cost:  </label>
+              <input type='text' value={cost} onChange={inputcostdHandler} />
+            </div>
+            
             
 
             <div >
-              <button className='submit'value="submit" >submit</button>
+              <button className='submit-btn'value="submit" >submit</button>
             </div>
             
            
-          </form>
+          </form> </div>
         </div>
       </div>
     </>

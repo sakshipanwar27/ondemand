@@ -24,24 +24,26 @@ const Admin = () => {
 
     return (
 
-        <div>
+        <div className='input'>
             <div>
-                <h1 className="bookAppointTitle mb-5 text-center">Wash pack</h1>
+                <h1 className="title1a">Wash pack</h1>
             </div>
 
             {washers.map((emp, ind) => (
-                <div className="bk2 ml-5" >
+                <div className="just-for-flex" >
 
-                    <div>
-                        <p className="bk3">Id : {emp.id}</p>
-                        <p className="bk3"> Name : {emp.packname}</p>
-                        <p className="bk3">Cost: {emp.cost}</p>
-                        <p className="bk3">Description : {emp.description}</p>
+                    <div className="loginForm">
+                        <p className="text">Id : {emp.id}</p>
+                        <p className="text"> Name : {emp.packname}</p>
+                        <p className="text">Cost: {emp.cost}</p>
+                        <p className="text">Description : {emp.description}</p>
+
+                        <div className="just-for-flex">
+                        <button className="Submit-btn hover-btn" onClick={() => { navigate('/addpacks') }}>Addpacks</button>
+                        <button className="Submit-btn hover-btn" onClick={() => { navigate('/washer') }}>Orderdetails</button>
                     </div>
-                    <div>
-                        <button className=" bookBtn bookBtnUpdate" onClick={() => { navigate('/addpacks') }}>Addpacks</button>
-                        <button className=" bookBtn bookBtnUpdate" onClick={() => { navigate('/washer') }}>Orderdetails</button>
                     </div>
+                   
                     <hr style={{ marginTop: "30px" }} />
                 </div>
             ))

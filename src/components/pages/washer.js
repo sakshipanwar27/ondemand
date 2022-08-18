@@ -21,14 +21,14 @@ const Washer = () => {
     
     return (
 
-        <div>
+        <div className='input'>
             <div>
-                <h1 className="bookdetails">Booked Details</h1>
+                <h1 className="title1a">Booked Details</h1>
             </div>
 
             {washers.map((emp, ind) => (
-                <div className="booking" >
-                    <div>
+                <div className="just-for-flex " >
+                    <div className='loginForm'>
                         <p className="wash">Name : {emp.username}</p>
                         <p className="wash">Car Name : {emp.carName}</p>
                         <p className="wash">Car Model: {emp.carModel}</p>
@@ -36,8 +36,8 @@ const Washer = () => {
                         <p className="wash">Wash Pack price: {emp.washpackId}</p>
                         <p className="wash">Contact.No : {emp.contactno}</p>
                         <p className="wash">Address: {emp.address}</p>
-                        <button className="bookBtn2" >Confirm Booking</button>
-                        <button className="bookBtn1">Cancel Booking</button>
+                        <button className="submit-btn" >Confirm Booking</button>
+                        <button className="submit-btn">Cancel Booking</button>
                     </div>
                     <hr style={{ marginTop: "30px" }} />
                 </div>
